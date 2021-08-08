@@ -1,7 +1,7 @@
 sealed class ThirdPartyApi {
 
   val prop: String = "foo"
-  var prop2: String = "bar"
+  var otherProp: String = "bar"
 
   def doSth() = println(s"doing something with $prop")
   def doSthElse() = println(s"doing something else with $prop")

@@ -6,7 +6,7 @@ case class TraditionalDecorator(tp: ThirdPartyApi) {
 
   def doSthSpecial() = {
     println(s"doing something special with ${tp.prop}, the traditional way")
-    tp.prop2 = "baz"
+    tp.otherProp = "baz"
   }
 
 }

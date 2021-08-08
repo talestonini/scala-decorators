@@ -2,7 +2,7 @@ case class Scala2Decorator(tp: ThirdPartyApi) {
 
   def doSthSpecial() = {
     println(s"doing something special with ${tp.prop}, the Scala 2 way")
-    tp.prop2 = "baz"
+    tp.otherProp = "baz"
   }
 
 }

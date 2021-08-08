@@ -7,7 +7,7 @@ object Main extends App {
     val decorator = new TraditionalDecorator(tp)
     decorator.doSthSpecial()
 
-    println(s"side-effect: prop2=${tp.prop2}")
+    println(s"side-effect: otherProp=${tp.otherProp}")
   }
 
   def scala2Decoration() = {
@@ -17,7 +17,16 @@ object Main extends App {
     tp.doSth()
     tp.doSthSpecial()
 
-    println(s"side-effect: prop2=${tp.prop2}")
+    println(s"side-effect: otherProp=${tp.otherProp}")
+  }
+
+  def scala3Decoration() = {
+    val tp = new ThirdPartyApi()
+
+    tp.doSth()
+    tp.doSthMoreSpecial()
+
+    println(s"side-effect: otherProp=${tp.otherProp}")
   }
 
   println("Traditional Decoration")
@@ -26,6 +35,10 @@ object Main extends App {
 
   println("Scala 2 Decoration")
   scala2Decoration()
+  println()
+
+  println("Scala 3 Decoration")
+  scala3Decoration()
   println()
 
 }
