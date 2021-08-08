@@ -30,14 +30,17 @@ object Main extends App {
   }
 
   println("Traditional Decoration")
+  println("----------------------")
   traditionalDecoration()
   println()
 
   println("Scala 2 Decoration")
+  println("------------------")
   scala2Decoration()
   println()
 
   println("Scala 3 Decoration")
+  println("------------------")
   scala3Decoration()
   println()
 
