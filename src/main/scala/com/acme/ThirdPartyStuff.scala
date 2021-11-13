@@ -6,7 +6,7 @@ sealed class ThirdPartyStuff {
   var otherProp: String = "bar"
 
   def doSth() = println(s"doing something with $prop")
-  def doSthElse() = println(s"doing something else")
+  def doSthElse() = println("doing something else")
   def doAnotherThing() = println(s"doing another thing with $otherProp")
 
 }
